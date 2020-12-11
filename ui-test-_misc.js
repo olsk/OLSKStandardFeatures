@@ -28,6 +28,7 @@ describe('OLSKStandardFeatures_Misc', function () {
 			
 			it('sets src', function () {
 				browser.assert.attribute(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 }) ${ OLSKStandardFeaturesItemIdentity }`, 'src', [
+						'/node_modules/OLSKUIAssets/_OLSKSharedPrivate.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedEverywhere.svg',
 					][i]);
 			});
