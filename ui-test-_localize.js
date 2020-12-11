@@ -14,6 +14,18 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			});
 		});
 
+		uLocalized('OLSKWordingStandardFeaturesArray').forEach(function ([name, blurb], i) {
+
+			it('localizes KOMVitrineStandardFeaturesItem', function () {
+				browser.assert.text(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 }) ${ OLSKStandardFeaturesItemName }`, name);
+			});
+
+			it('localizes KOMVitrineStandardFeaturesBlurb', function () {
+				browser.assert.text(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 }) ${ OLSKStandardFeaturesItemBlurb }`, blurb);
+			});
+			
+		});
+
 	});
 
 });

@@ -1,2 +1,15 @@
 <div class="OLSKStandardFeatures">
+
+<% OLSKLocalized('OLSKWordingStandardFeaturesArray').forEach(function ([name, blurb], i) { -%>
+	<div class="OLSKStandardFeaturesItem OLSKCommonCard OLSKCommonFeatureCard">
+		<img class="OLSKStandardFeaturesItemIdentity" src="<%= [
+			'/node_modules/OLSKUIAssets/_OLSKSharedEverywhere.svg',
+		][i] %>" role="presentation" />
+		<section>
+			<span class="OLSKStandardFeaturesItemName"><%= name %></span>
+			<span class="OLSKStandardFeaturesItemBlurb"><%= blurb %></span>
+		</section>
+	</div>
+<% }) -%>
+
 </div>
