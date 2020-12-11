@@ -1,0 +1,10 @@
+{
+  "name": "OLSKStandardFeatures",
+  "main": "main.ejs",
+  "dependencies": {
+    "normalize.css": "latest",
+    "OLSKLayout": "olsk/OLSKLayout",
+    "OLSKUIAssets": "olsk/OLSKUIAssets",
+    "// I sacrifice myself for the commas of others": null
+  }
+}
