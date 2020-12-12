@@ -12,10 +12,10 @@ describe('OLSKAppFeatureList_Misc', function () {
 
 	uLocalized('OLSKAppFeatureListArray').forEach(function (e, i) {
 
-		describe('OLSKFeatureListItemImage', function test_OLSKFeatureListItemImage () {
+		describe('OLSKFeatureListItemIcon', function test_OLSKFeatureListItemIcon () {
 			
 			it('sets src', function () {
-				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemImage`, 'src', [
+				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemIcon`, 'src', [
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureSync.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureOffline.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureEverywhere.svg',
@@ -27,7 +27,7 @@ describe('OLSKAppFeatureList_Misc', function () {
 			});
 			
 			it('sets role', function () {
-				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemImage`, 'role', 'presentation');
+				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemIcon`, 'role', 'presentation');
 			});
 
 		});
