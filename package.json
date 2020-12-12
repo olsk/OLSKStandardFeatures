@@ -2,8 +2,7 @@
   "name": "OLSKStandardFeatures",
   "main": "main.ejs",
   "dependencies": {
-    "normalize.css": "latest",
-    "OLSKLayout": "olsk/OLSKLayout",
+    "OLSKFeatureList": "olsk/OLSKFeatureList",
     "OLSKUIAssets": "olsk/OLSKUIAssets",
     "// I sacrifice myself for the commas of others": null
   }

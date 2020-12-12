@@ -12,22 +12,10 @@ describe('OLSKStandardFeatures_Misc', function () {
 
 	uLocalized('OLSKWordingStandardFeaturesArray').forEach(function (e, i) {
 
-		describe('OLSKStandardFeaturesItem', function test_OLSKStandardFeaturesItem () {
-			
-			it('classes OLSKCommonCard', function () {
-				browser.assert.hasClass(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 })`, 'OLSKCommonCard');
-			});
-
-			it('classes OLSKCommonFeatureCard', function () {
-				browser.assert.hasClass(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 })`, 'OLSKCommonFeatureCard');
-			});
-
-		});
-
 		describe('OLSKStandardFeaturesItemIdentity', function test_OLSKStandardFeaturesItemIdentity () {
 			
 			it('sets src', function () {
-				browser.assert.attribute(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 }) ${ OLSKStandardFeaturesItemIdentity }`, 'src', [
+				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemImage`, 'src', [
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureSync.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureOffline.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureEverywhere.svg',
@@ -38,7 +26,7 @@ describe('OLSKStandardFeatures_Misc', function () {
 			});
 			
 			it('sets role', function () {
-				browser.assert.attribute(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 }) ${ OLSKStandardFeaturesItemIdentity }`, 'role', 'presentation');
+				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemImage`, 'role', 'presentation');
 			});
 
 		});

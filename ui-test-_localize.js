@@ -17,11 +17,11 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		uLocalized('OLSKWordingStandardFeaturesArray').forEach(function ([name, blurb], i) {
 
 			it('localizes KOMVitrineStandardFeaturesItem', function () {
-				browser.assert.text(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 }) ${ OLSKStandardFeaturesItemName }`, name);
+				browser.assert.text(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemName`, name);
 			});
 
 			it('localizes KOMVitrineStandardFeaturesBlurb', function () {
-				browser.assert.text(`${ OLSKStandardFeaturesItem }:nth-child(${ i + 1 }) ${ OLSKStandardFeaturesItemBlurb }`, blurb);
+				browser.assert.text(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemBlurb`, blurb);
 			});
 			
 		});
