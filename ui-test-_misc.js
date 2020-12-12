@@ -22,6 +22,7 @@ describe('OLSKAppFeatureList_Misc', function () {
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureKeyboard.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureAccessible.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeaturePrivate.svg',
+						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureZeroData.svg',
 					][i]);
 			});
 			
