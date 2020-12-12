@@ -6,7 +6,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		return OLSKTestingLocalized(inputData, OLSKRoutingLanguage);
 	};
 
-	describe(`OLSKStandardFeatures_Localize-${ OLSKRoutingLanguage }`, function () {
+	describe(`OLSKAppFeatureList_Localize-${ OLSKRoutingLanguage }`, function () {
 
 		before(function() {
 			return browser.OLSKVisit(kDefaultRoute, {
@@ -14,7 +14,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			});
 		});
 
-		uLocalized('OLSKStandardFeaturesArray').forEach(function ([name, blurb], i) {
+		uLocalized('OLSKAppFeatureListArray').forEach(function ([name, blurb], i) {
 
 			it('localizes KOMVitrineStandardFeaturesItem', function () {
 				browser.assert.text(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemName`, name);

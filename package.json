@@ -1,5 +1,5 @@
 {
-  "name": "OLSKStandardFeatures",
+  "name": "OLSKAppFeatureList",
   "main": "main.ejs",
   "dependencies": {
     "OLSKFeatureList": "olsk/OLSKFeatureList",

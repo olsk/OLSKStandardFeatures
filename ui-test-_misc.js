@@ -4,15 +4,15 @@ const uLocalized = function (inputData) {
 	return OLSKTestingLocalized(inputData, 'en');
 };
 
-describe('OLSKStandardFeatures_Misc', function () {
+describe('OLSKAppFeatureList_Misc', function () {
 
 	before(function () {
 		return browser.OLSKVisit(kDefaultRoute);
 	});
 
-	uLocalized('OLSKStandardFeaturesArray').forEach(function (e, i) {
+	uLocalized('OLSKAppFeatureListArray').forEach(function (e, i) {
 
-		describe('OLSKStandardFeaturesItemIdentity', function test_OLSKStandardFeaturesItemIdentity () {
+		describe('OLSKAppFeatureListItemIdentity', function test_OLSKAppFeatureListItemIdentity () {
 			
 			it('sets src', function () {
 				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemImage`, 'src', [

@@ -5,7 +5,7 @@ exports.OLSKControllerRoutes = function() {
 		OLSKRouteFunction (req, res, next) {
 			return res.OLSKLayoutRender(require('path').join(__dirname, 'stub-view'));
 		},
-		OLSKRouteSignature: 'OLSKStandardFeaturesStubRoute',
+		OLSKRouteSignature: 'OLSKAppFeatureListStubRoute',
 		OLSKRouteLanguageCodes: ['en', 'fr', 'es'],
 	}];
 };

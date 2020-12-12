@@ -1,19 +1,19 @@
 const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 Object.entries({
-	OLSKStandardFeatures: '.OLSKStandardFeatures',
+	OLSKAppFeatureList: '.OLSKAppFeatureList',
 }).map(function (e) {
 	return global[e.shift()]  = e.pop();
 });
 
-describe('OLSKStandardFeatures_Access', function () {
+describe('OLSKAppFeatureList_Access', function () {
 	
 	before(function() {
 		return browser.OLSKVisit(kDefaultRoute);
 	});
 	
-	it('shows OLSKStandardFeatures', function() {
-		browser.assert.elements(OLSKStandardFeatures, 1);
+	it('shows OLSKAppFeatureList', function() {
+		browser.assert.elements(OLSKAppFeatureList, 1);
 	});
 	
 	it('shows OLSKFeatureList', function() {
