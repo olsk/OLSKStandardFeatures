@@ -12,7 +12,7 @@ describe('OLSKAppFeatureList_Misc', function () {
 
 	uLocalized('OLSKAppFeatureListArray').forEach(function (e, i) {
 
-		describe('OLSKAppFeatureListItemIdentity', function test_OLSKAppFeatureListItemIdentity () {
+		describe('OLSKFeatureListItemImage', function test_OLSKFeatureListItemImage () {
 			
 			it('sets src', function () {
 				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemImage`, 'src', [
