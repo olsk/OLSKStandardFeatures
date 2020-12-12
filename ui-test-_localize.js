@@ -14,7 +14,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			});
 		});
 
-		uLocalized('OLSKWordingStandardFeaturesArray').forEach(function ([name, blurb], i) {
+		uLocalized('OLSKStandardFeaturesArray').forEach(function ([name, blurb], i) {
 
 			it('localizes KOMVitrineStandardFeaturesItem', function () {
 				browser.assert.text(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemName`, name);

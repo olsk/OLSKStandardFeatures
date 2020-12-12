@@ -10,7 +10,7 @@ describe('OLSKStandardFeatures_Misc', function () {
 		return browser.OLSKVisit(kDefaultRoute);
 	});
 
-	uLocalized('OLSKWordingStandardFeaturesArray').forEach(function (e, i) {
+	uLocalized('OLSKStandardFeaturesArray').forEach(function (e, i) {
 
 		describe('OLSKStandardFeaturesItemIdentity', function test_OLSKStandardFeaturesItemIdentity () {
 			
