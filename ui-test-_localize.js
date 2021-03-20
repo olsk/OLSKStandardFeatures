@@ -26,6 +26,27 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			
 		});
 
+		context('OLSKAppFeatureListRepoURL', function () {
+
+			const OLSKAppFeatureListRepoURL = Math.random().toString();
+			
+			before(function() {
+				return browser.OLSKVisit(kDefaultRoute, {
+					OLSKRoutingLanguage,
+					OLSKAppFeatureListRepoURL,
+				});
+			});
+
+			it('localizes OLSKAppFeatureOpenSourceName', function () {
+				browser.assert.text(OLSKAppFeatureOpenSourceName, uLocalized('OLSKAppFeatureOpenSourceNameText'));
+			});
+
+			it('localizes OLSKAppFeatureOpenSourceBlurb', function () {
+				browser.assert.OLSKInnerHTML(OLSKAppFeatureOpenSourceBlurb, require('OLSKString').OLSKStringFormatted(uLocalized('OLSKAppFeatureOpenSourceBlurbFormat'), OLSKAppFeatureListRepoURL));
+			});
+		
+		});
+
 	});
 
 });

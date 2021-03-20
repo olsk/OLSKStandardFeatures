@@ -1,7 +1,7 @@
 <div class="OLSKAppFeatureList">
 
 <%- include('../OLSKFeatureList/main.ejs', {
-	OLSKFeatureListData: OLSKLocalized('OLSKAppFeatureListArray').map(function (e, i) {
+	OLSKFeatureListData: OLSKLocalized('OLSKAppFeatureListArray').concat(locals.OLSKAppFeatureListRepoURL ? [[OLSKLocalized('OLSKAppFeatureOpenSourceNameText'), OLSKFormatted(OLSKLocalized('OLSKAppFeatureOpenSourceBlurbFormat'), locals.OLSKAppFeatureListRepoURL)]] : []).map(function (e, i) {
 		return e.concat([
 			'/node_modules/OLSKUIAssets/_OLSKSharedFeatureSync.svg',
 			'/node_modules/OLSKUIAssets/_OLSKSharedFeatureOffline.svg',
@@ -10,6 +10,7 @@
 			'/node_modules/OLSKUIAssets/_OLSKSharedFeatureAccessible.svg',
 			'/node_modules/OLSKUIAssets/_OLSKSharedFeaturePrivate.svg',
 			'/node_modules/OLSKUIAssets/_OLSKSharedFeatureZeroData.svg',
+			['/node_modules/OLSKUIAssets/_OLSKSharedFeatureOpenSource.svg', 'OLSKAppFeatureListItemOpenSource'],
 		][i]);
 	}),
 }) %>

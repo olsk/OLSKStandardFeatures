@@ -13,3 +13,5 @@ OLSKAppFeatureListArray:
     - Sin anuncios, análisis, o rastreadores.
   - - Ser dueno de tus datos.
     - 100% tuyo en una aplicación <a href="https://0data.app">0data</a>.
+OLSKAppFeatureOpenSourceNameText: Código aberto.
+OLSKAppFeatureOpenSourceBlurbFormat: El código es <a href="%@">público</a> para leer e modificar.
