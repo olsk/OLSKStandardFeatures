@@ -7,6 +7,8 @@ OLSKAppFeatureListArray:
     - Works on mobile, tablet, and desktop devices.
   - - Efficient workflow.
     - Keyboard shortcuts for most things.
+  - - Move data freely.
+    - Import and export JSON data (beta).
   - - Blind-friendly.
     - Text labels on all elements.
   - - Private, not creepy.

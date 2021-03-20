@@ -7,6 +7,8 @@ OLSKAppFeatureListArray:
     - Fonctionne sur des appareils mobiles, les tablettes et les ordinateurs de bureau
   - - Un flux de travail efficace.
     - Raccourcis clavier pour la plupart des choses.
+  - - Déplacer les données librement.
+    - Importer et exporter des données JSON (béta).
   - - Blind-friendly.
     - Étiquettes de texte sur tous les éléments.
   - - Privée, pas affreuse.
