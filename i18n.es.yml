@@ -1,19 +1,19 @@
 OLSKAppFeatureListArray:
   - - Tus dados en todos tus dispositivos.
     - Sincronizar al nube automáticamente con remoteStorage.
-  - - Sin Wi-Fi, sin problema.
+  - - 'Sin Wi-Fi, sin problema.'
     - Foncione offline sin acesso al internet.
   - - Accesible en cualquier lugar.
-    - Foncione en dispositivos mobiles, tabletas y computadoras.
+    - 'Foncione en dispositivos mobiles, tabletas y computadoras.'
   - - Flujo de trabajo eficiente.
     - Atajos de teclado para la mayoría de las cosas.
   - - Mueve los datos libremente.
     - Importar y exportar datos JSON (beta)
   - - Blind-friendly.
     - Etiquetas de texto en todos los elementos.
-  - - Privado, no creepy.
-    - Sin anuncios, análisis, o rastreadores.
+  - - 'Privado, no creepy.'
+    - 'Sin anuncios, análisis, o rastreadores.'
   - - Ser dueno de tus datos.
-    - 100% tuyo en una aplicación <a href="https://0data.app">0data</a>.
+    - '100% tuyo en una aplicación <a href="https://0data.app">0data</a>.'
 OLSKAppFeatureOpenSourceNameText: Código aberto.
 OLSKAppFeatureOpenSourceBlurbFormat: El código es <a href="%@">público</a> para leer e modificar.
