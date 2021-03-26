@@ -4,7 +4,7 @@ OLSKAppFeatureListArray:
   - - 'No Wi-Fi, no problem.'
     - Works offline without internet access.
   - - Your data on all your devices.
-    - Automatic cloud sync with remoteStorage.
+    - Automatic cloud sync with remoteStorage or Fission.
   - - Efficient workflow.
     - Keyboard shortcuts for most things.
   - - Move data freely.
