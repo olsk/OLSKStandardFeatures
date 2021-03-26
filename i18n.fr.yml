@@ -1,10 +1,10 @@
 OLSKAppFeatureListArray:
-  - - Vos données en tous vos appareils.
-    - Synchronisation automatique sur le cloud avec remoteStorage.
-  - - 'Pas de Wi-Fi, pas de problème.'
-    - Fonctionne hors ligne sans accès à Internet.
   - - Accessible partout.
     - 'Fonctionne sur les appareils mobiles, les tablettes et les ordinateurs de bureau.'
+  - - 'Pas de Wi-Fi, pas de problème.'
+    - Fonctionne hors ligne sans accès à Internet.
+  - - Vos données en tous vos appareils.
+    - Synchronisation automatique sur le cloud avec remoteStorage.
   - - Flux de travail efficace.
     - Raccourcis clavier pour la plupart des choses.
   - - Déplacer les données librement.
