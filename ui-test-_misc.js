@@ -16,9 +16,9 @@ describe('OLSKAppFeatureList_Misc', function () {
 			
 			it('sets src', function () {
 				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemIcon`, 'src', [
-						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureSync.svg',
-						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureOffline.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureEverywhere.svg',
+						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureOffline.svg',
+						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureSync.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureKeyboard.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureTransport.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureAccessible.svg',
