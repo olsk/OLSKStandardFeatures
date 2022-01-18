@@ -6,7 +6,7 @@ Object.entries({
 	OLSKAppFeatureOpenSourceName: '.OLSKAppFeatureListItemOpenSource .OLSKFeatureListItemName',
 	OLSKAppFeatureOpenSourceBlurb: '.OLSKAppFeatureListItemOpenSource .OLSKFeatureListItemBlurb',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('OLSKAppFeatureList_Access', function () {
