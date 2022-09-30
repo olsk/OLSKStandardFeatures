@@ -4,6 +4,6 @@
   "dependencies": {
     "OLSKFeatureList": "olsk/OLSKFeatureList",
     "OLSKUIAssets": "olsk/OLSKUIAssets",
-    "// I sacrifice myself for the commas of others": null
+    "//": "I sacrifice myself for the commas of others"
   }
 }
