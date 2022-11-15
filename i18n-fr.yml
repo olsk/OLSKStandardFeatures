@@ -12,7 +12,7 @@ OLSKAppFeatureListArray:
   - - Blind-friendly.
     - Étiquettes de texte sur tous les éléments.
   - - 'Privé, pas effrayant.'
-    - 'Pas d''analyse comportementale ni de traceurs.'
+    - 'Pas d''analyse comportementale ni de traceurs intersites.'
   - - Vos données vous appartiennent.
     - '100% à vous dans une application <a href="https://0data.app">0data</a>.'
 OLSKAppFeatureOpenSourceNameText: Source ouvert.
