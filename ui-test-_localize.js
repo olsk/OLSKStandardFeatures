@@ -17,11 +17,11 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		uLocalized('OLSKAppFeatureListArray').forEach(function ([name, blurb], i) {
 
 			it('localizes KOMVitrineStandardFeaturesItem', function () {
-				browser.assert.text(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemName`, name);
+				return browser.assert.text(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemName`, name);
 			});
 
 			it('localizes KOMVitrineStandardFeaturesBlurb', function () {
-				browser.assert.OLSKInnerHTML(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemBlurb`, blurb);
+				return browser.assert.OLSKInnerHTML(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemBlurb`, blurb);
 			});
 			
 		});
@@ -38,11 +38,11 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 			});
 
 			it('localizes OLSKAppFeatureOpenSourceName', function () {
-				browser.assert.text(OLSKAppFeatureOpenSourceName, uLocalized('OLSKAppFeatureOpenSourceNameText'));
+				return browser.assert.text(OLSKAppFeatureOpenSourceName, uLocalized('OLSKAppFeatureOpenSourceNameText'));
 			});
 
 			it('localizes OLSKAppFeatureOpenSourceBlurb', function () {
-				browser.assert.OLSKInnerHTML(OLSKAppFeatureOpenSourceBlurb, require('OLSKString').OLSKStringFormatted(uLocalized('OLSKAppFeatureOpenSourceBlurbFormat'), OLSKAppFeatureListRepoURL));
+				return browser.assert.OLSKInnerHTML(OLSKAppFeatureOpenSourceBlurb, require('OLSKString').OLSKStringFormatted(uLocalized('OLSKAppFeatureOpenSourceBlurbFormat'), OLSKAppFeatureListRepoURL));
 			});
 		
 		});

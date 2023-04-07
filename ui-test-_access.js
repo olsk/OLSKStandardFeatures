@@ -16,19 +16,19 @@ describe('OLSKAppFeatureList_Access', function () {
 	});
 	
 	it('shows OLSKAppFeatureList', function() {
-		browser.assert.elements(OLSKAppFeatureList, 1);
+		return browser.assert.elements(OLSKAppFeatureList, 1);
 	});
 	
 	it('shows OLSKFeatureList', function() {
-		browser.assert.elements('.OLSKFeatureList', 1);
+		return browser.assert.elements('.OLSKFeatureList', 1);
 	});
 
 	it('hides OLSKAppFeatureOpenSourceName', function () {
-		browser.assert.elements(OLSKAppFeatureOpenSourceName, 0);
+		return browser.assert.elements(OLSKAppFeatureOpenSourceName, 0);
 	});
 
 	it('hides OLSKAppFeatureOpenSourceBlurb', function () {
-		browser.assert.elements(OLSKAppFeatureOpenSourceBlurb, 0);
+		return browser.assert.elements(OLSKAppFeatureOpenSourceBlurb, 0);
 	});
 
 	context('OLSKAppFeatureListRepoURL', function () {
@@ -40,11 +40,11 @@ describe('OLSKAppFeatureList_Access', function () {
 		});
 		
 		it('shows OLSKAppFeatureOpenSourceName', function () {
-			browser.assert.elements(OLSKAppFeatureOpenSourceName, 1);
+			return browser.assert.elements(OLSKAppFeatureOpenSourceName, 1);
 		});
 
 		it('shows OLSKAppFeatureOpenSourceBlurb', function () {
-			browser.assert.elements(OLSKAppFeatureOpenSourceBlurb, 1);
+			return browser.assert.elements(OLSKAppFeatureOpenSourceBlurb, 1);
 		});
 	
 	});

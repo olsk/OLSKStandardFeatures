@@ -15,7 +15,7 @@ describe('OLSKAppFeatureList_Misc', function () {
 		describe('OLSKFeatureListItemIcon', function test_OLSKFeatureListItemIcon () {
 			
 			it('sets src', function () {
-				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemIcon`, 'src', [
+				return browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemIcon`, 'src', [
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureEverywhere.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureOffline.svg',
 						'/node_modules/OLSKUIAssets/_OLSKSharedFeatureSync.svg',
@@ -28,7 +28,7 @@ describe('OLSKAppFeatureList_Misc', function () {
 			});
 			
 			it('sets role', function () {
-				browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemIcon`, 'role', 'presentation');
+				return browser.assert.attribute(`.OLSKFeatureListItem:nth-child(${ i + 1 }) .OLSKFeatureListItemIcon`, 'role', 'presentation');
 			});
 
 		});
