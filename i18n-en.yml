@@ -14,6 +14,6 @@ OLSKAppFeatureListArray:
   - - 'Private, not creepy.'
     - 'No behavioural analytics or cross-site trackers.'
   - - Own your data.
-    - '100% yours in a <a href="https://0data.app">0data</a> app.'
+    - '100% yours in a <a href="https://0data.app">Zero Data</a> app.'
 OLSKAppFeatureOpenSourceNameText: Open-source.
 OLSKAppFeatureOpenSourceBlurbFormat: The code is <a href="%@">public</a> to read and modify.
